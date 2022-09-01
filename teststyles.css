@@ -1,0 +1,358 @@
+/* main styling */
+/* styling the main body of each webpage */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #192841;
+  font-family:"Lexend Deca";
+  font-size: 25px;
+  overflow:hidden;
+}
+/* making the headers, links, form labels and underlines all the same colour */
+h1,h2,h3,a,label,u{
+  color:#003d80;
+}
+/* making the p tags, links and time selector are centered */
+p,a,#selectForm{
+  text-align:center;
+}
+/* styling for the form inputs (login and sign-up) */
+/* setting the dimensions and shape */
+input {
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+/* styling for the text form inputs (login and sign-up)*/
+/* setting the outline of the input and adding transition */
+input[type=text]{
+  box-sizing: border-box;
+  border: 4px solid #003d80;
+  transition: 0.5s;
+  outline: none;
+}
+/* styling for the password form inputs (login and sign-up)*/
+/* setting the outline of the input and adding transition */
+input[type=password]{
+  box-sizing: border-box;
+  border: 4px solid #003d80;
+  transition: 0.5s;
+  outline: none;
+}
+/* styling for the text form input when in focus (login and sign-up)*/
+/* highlighting the outline when the user clicks on the input */
+input[type=text]:focus {
+  border: 3px solid #7393B3;
+}
+/* styling for the password form input when in focus (login and sign-up)*/
+/* highlighting the outline when the user clicks on the input */
+input[type=password]:focus {
+  border: 3px solid #7393B3;
+}
+/* styling for the header of each page */
+/* setting up the dimensions and making it a grid display */
+header{
+  width:100%;
+  height:20%;
+  box-shadow: 0px 5px 10px 0px #111;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+/* styling for items within the a grid */
+/* aligning objects centre */
+#logo-container,#formInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* styling the logout button */
+/* setting the button's colour, sizing, font sizing, and transition time */
+#logoutButton{
+  background:#192841;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color:#003d80;
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight:bold;
+  transition: 0.5s;
+}
+/* setting the colour for when the cursor is over the log out button */
+#logoutButton:hover{
+  color:#7393B3;
+}
+/* styling for the login and sign up buttons */
+/* setting the button's colour, sizing, font sizing, and transition time */
+#submit{
+  background:#192841;
+  border: 1px solid black;
+  border-width:2px;
+  border-color: #003d80;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color:#003d80;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+/* setting the colour for when the cursor is over the login/sign-up button */
+#submit:hover{
+  color:#7393B3;
+  border-color:#7393B3;
+}
+/* styling the the keycap image */
+/* setting the placement of the image using a div */
+#image{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+/* setting the sizing of the image */
+#keycap{
+  width: 50%;
+}
+/* styling for the login/signup page */
+/* setting up the dimensions and making it a grid display */
+#PageMain{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  height:80%
+}
+/* adding a transition to the login and sign up link */
+#signupLink,#loginLink{
+  transition: 0.5s;
+}
+/* styling for the sign-up, login and log out buttons */
+/* setting up the link dimensions to fit the header */
+/* setting the positioning for the header links */
+#link-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2em;
+}
+
+/* CSS Styling for the sign-up page */
+/* colour for error message */
+.invalid{
+  color: red;
+  font-size: 10px;
+}
+/* hiding the messages initially */
+#invalidMatch,#invalidLength,#invalidNumber,#invalidUsername,#invalidLogin{
+  display: none;
+}
+
+/* CSS Styling for the main page */
+/* styling for the dropdown menu */
+#timeLimit{
+  height:50px;
+  width:250px;
+  border-width:2px;
+  border-color:#003d80;
+  background:#192841;
+  font-size: 0.75em;
+  font-weight:bolder;
+  color:#003d80;
+  user-select: none;
+  transition: 0.5s;
+}
+/* styling for when the cursor is over the dropdown */
+#timeLimit:hover{
+  background-color:#192841;
+  border-color:#7393B3;
+  color:#7393B3;
+}
+/* styling for the start test button */
+#startTest{
+  background:#192841;
+  border: 1px solid black;
+  border-width:2px;
+  border-color: #003d80;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color:#003d80;
+  font-size: 1em;
+  font-weight:bolder;
+  transition: 0.5s;
+}
+/* styling for when the cursor is over the start button */
+#startTest:hover{
+  color:#7393B3;
+  border-color:#7393B3;
+}
+
+/* alignment for the main typing element */
+#centreType{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* alignment for the time limit selection */
+#centre{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* banner sizing styles */
+#banner{
+  width:275px;
+}
+/* Prompt styling */
+#prompt{
+  text-align:center;
+  color: #7393B3;
+  border:solid;
+}
+/* typing contents styles */
+#contents {
+  position: fixed;
+  color: grey;
+}
+/* colouring for typed characters */
+#typed{
+  color:powderblue;
+}
+/* colouring for untyped characters */
+#untyped{
+  color:grey;
+}
+/* coloring, "caret" and transition styling */
+#incorrect{
+  opacity: 0.45;
+  color:red;
+  border-right:solid 2px;
+  border-bottom:solid 2px;
+  animation-name:incorrect;
+  animation-duration:0.8s;
+  animation-iteration-count: infinite;
+}
+/* keyframes used to create a "caret", to show the user where the current typing position is */
+@keyframes incorrect {
+  from {border-right-color: #192841;}
+  to {border-right-color: powderblue;}
+}
+/* styling for error message when an incorrect character is entered */
+#error{
+  opacity:0;
+  transition:0.5s;
+  text-align:center;
+  color:#b30000;
+}
+/*general dimension sizing for the main typing element */
+#spacing{
+  margin-top: 60px
+}
+/* styling for the countdown timer */
+#countdown{
+  text-align:center;
+  color: #7393B3;
+}
+
+
+/* Styling and animation for the menu tag */
+#menu {
+  font-size: 40px;
+  position:absolute;
+  display:inline;
+  float:left;
+  margin: 2.5% 0 0 2%;
+}
+a:hover {
+  color: #7393B3;
+}
+
+/* CSS Styling for loading page */
+#nextButton{
+  height:50px;
+  width:300px;
+}
+
+/* CSS Styling for results page */
+/* creating a grid layout for the results page */
+#resultsFormat{
+  width:100%;
+  height:80%;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+/* styles for setting the positions, dimensions and alignments of the results page */
+#left,#middle,#right{
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+/* styling for the latest WPM */
+.title{
+  color:#7393B3;
+  font-size:2em;
+}
+/* Styling for the top 5 WPM */
+.topScore{
+  color:#7393B3;
+  font-size:1.25em;
+}
+/* styling for the re-try and change time limit buttons on the results page */
+#resultButton{
+  height:75px;
+  width:300px;
+  background:#192841;
+  border: 1px solid black;
+  border-width:2px;
+  border-color: #003d80;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color:#003d80;
+  font-size: 1em;
+  font-weight:bolder;
+  transition: 0.5s;
+}
+#resultButton:hover{
+  color:#7393B3;
+  border-color:#7393B3;
+}
+
+/* media queries (F10)*/
+@media only screen and (max-width:720px){
+  /* changing general webpage font-sizes */
+  body{
+    font-size:17px;
+  }
+  /* changes the header to be split into 2 rather then 3 */
+  header {
+    grid-template-columns:repeat(2,1fr);
+  }
+  /* hide the menu and invisible span tags to make space for the banner and log out link to fill the header */
+  #invisible,#menuDiv {
+    display: none;
+  }
+  /* change banner sizing */
+  #banner{
+    width:200px;
+  }
+  /* change positioning of keycap image */
+  #image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* change sizing of keycap image */
+  #keycap{
+    width: 100%;
+  }
+  /* changing styling of resultButton */
+  #resultButton{
+    height:75px;
+    width:150px;
+    white-space: normal;
+  }
+}
